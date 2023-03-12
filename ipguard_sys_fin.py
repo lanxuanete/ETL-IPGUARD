@@ -4,9 +4,9 @@ import pymysql
 
 #update two tables:ipguard_agent and ipguard_user
 def update(tablename_src,tablename_desc):
-    conn_ms = pymssql.connect(host='172.16.50.31:61161',
+    conn_ms = pymssql.connect(host=,
                            user='data_reader',
-                           password='zhenge$123456',
+                           password=,
                            database='OCULAR3',
                            charset='utf8')
     cursor_ms = conn_ms.cursor()
@@ -18,9 +18,9 @@ def update(tablename_src,tablename_desc):
         return False
     print(res_ms)
 
-    conn_my = pymysql.connect(host='rm-uf665o948h129h2vn7o.mysql.rds.aliyuncs.com',
+    conn_my = pymysql.connect(host=,
                            user='tmp_write',
-                           password='Ntruy9pe5cvkSu@',
+                           password=,
                            database='staging',
                            charset='utf8')
     cursor_my = conn_my.cursor()
