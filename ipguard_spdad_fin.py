@@ -139,18 +139,18 @@ def get_it_r_udisk_opration(conn_ms,conn_my):
 
 
 if __name__ == '__main__':
-    conn_ms = pymssql.connect(host='172.16.50.31:61161',
-                           user='data_reader',
-                           password='zhenge$123456',
-                           database='OCULAR3',
+    conn_ms = pymssql.connect(host=,
+                           user=,
+                           password=,
+                           database=,
                            charset='utf8'
                             )
 
 
-    conn_my = pymysql.connect(host='rm-uf665o948h129h2vn7o.mysql.rds.aliyuncs.com',
-                           user='tmp_write',
-                           password='Ntruy9pe5cvkSu@',
-                           database='staging',
+    conn_my = pymysql.connect(host=,
+                           user=,
+                           password=,
+                           database=,
                            charset='utf8')
 
     path = 'D:\log'
