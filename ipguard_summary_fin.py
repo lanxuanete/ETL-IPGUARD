@@ -147,7 +147,7 @@ if __name__ == '__main__':
         2. Extract all data from the [UDISK_LOG] table and insert it into the staging.ipguard_udisk_log
     """
     #还原
-    ms = MSSQL(host='127.0.0.1', user="data_reader", pwd="root123456!", db='OCULAR3_DATA')
+    ms = MSSQL(host='127.0.0.1', user=, pwd=, db='OCULAR3_DATA')
     path = "D:\IPGuard_DB_BAK" #.mdf文件所在路径
     ms.Restore(path)
 
